@@ -22,4 +22,4 @@ class geoname (models.Model):
     moddate = models.DateField(null = True)
 
     def __unicode__(self):
-        return self.name
+        return '%s %s %s' % (self.name, self.country, self.elevation)

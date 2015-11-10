@@ -20,3 +20,6 @@ class geoname (models.Model):
     gtopo30 = models.IntegerField(null = True)
     timezone =  models.CharField(max_length = 40, null = True)
     moddate = models.DateField(null = True)
+
+    def __unicode__(self):
+        return self.name

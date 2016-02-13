@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Login</p>
+<form action='/login/' method='POST'> {% csrf_token %}
+        <label for='username'> Username </label>
+        <input type='text' name='username' id='username'>
+        <label for='password'>Password </label>
+        <input type='password' name='password' id='password'>
+        <input type='submit' value='login'>
+</form>
+
+{% if abc == 1 %}
+    <p>sorry sucker, wrong password</p>
+{% endif %}
+
+
+</body>
+</html>

@@ -2,8 +2,32 @@
 <html>
 <body>
 
+{% for x in c %}
+{{ x.0 }}, {{ x.1 }} | {{ x.2 }}, {{ x.3 }} <br>
+{% endfor %}
+
+<br>
+------------------
+
+<br>
+{{ c }} <br>
+{{ z }}<br>
+{{ xyz }}
+<p> Distance: {{ dis }} </p> <br><br>
+<p> Casinos {{ casinos }} </p>
+
+{% for x in casinos %}
+  {{ x.geonameid }}
+  {{ x.latitude }}
+  {{ x.longitude }}
+  <br>
+{% endfor %}
+
+<p> Beaches {{ beaches }} </p>
 <p>All data points with ELEVATION > 5000</p>
 {{ abc }}
+<br><br>
+{{ geocode_result }}
 
 
 </body>

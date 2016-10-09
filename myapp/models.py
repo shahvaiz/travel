@@ -21,8 +21,8 @@ class geoname (models.Model):
     timezone =  models.CharField(max_length = 40, null = True)
     moddate = models.DateField(null = True)
 
-    def __unicode__(self):
-        return '%s %s %s' % (self.name, self.country, self.elevation)
+#    def __unicode__(self):
+#        return '{0} %s %s %s' % (self.latitude, self.name, self.country, self.elevation)
 
 class tags (models.Model):
     tagid = models.AutoField(primary_key = True)

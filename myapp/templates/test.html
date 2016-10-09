@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+Pairs of casinos and beaches within 15 miles<br>
+GEONAME ID, NAME | GEONAME ID, NAME
 {% for x in c %}
 {{ x.0 }}, {{ x.1 }} | {{ x.2 }}, {{ x.3 }} <br>
 {% endfor %}
 
 <br>
-------------------
+------------------------------------------------------
 
 <br>
 {{ c }} <br>
